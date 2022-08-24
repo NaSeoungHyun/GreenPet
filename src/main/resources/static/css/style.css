@@ -135,7 +135,7 @@ ol {
 }
 
 .set-bg {
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-size: cover;
 	background-position: top center;
 }
@@ -164,6 +164,17 @@ ol {
 	display: inline-block;
 	font-size: 14px;
 	padding: 10px 28px 10px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 700;
+	background: #7fad39;
+	letter-spacing: 2px;
+}
+
+.more-view{
+	display: inline-block;
+	font-size: 14px;
+	padding: 16px 153px 10px;
 	color: #ffffff;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -561,7 +572,7 @@ ol {
 -----------------------*/
 
 .hero {
-	padding-bottom: 50px;
+	padding-bottom: 10px;
 }
 
 .hero.hero-normal {
@@ -811,7 +822,7 @@ ol {
 -----------------------*/
 
 .featured {
-	padding-top: 80px;
+	padding-top: 0px;
 	padding-bottom: 40px;
 }
 
@@ -850,7 +861,7 @@ ol {
 }
 
 .featured__item {
-	margin-bottom: 50px;
+	margin-bottom: 4px;
 }
 
 .featured__item:hover .featured__item__pic .featured__item__pic__hover {
@@ -858,10 +869,11 @@ ol {
 }
 
 .featured__item__pic {
-	height: 270px;
-	position: relative;
-	overflow: hidden;
-	background-position: center center;
+    height: 124px;
+    width: 124px;
+    position: relative;
+    overflow: hidden;
+    background-position: center center;
 }
 
 .featured__item__pic__hover {
@@ -942,6 +954,15 @@ ol {
 	color: #252525;
 	font-weight: 700;
 }
+
+/*20220824 나승현 detail pic 수정*/
+.featured__item__detail__pic {
+	    /*position: relative;
+        width: 100%;
+        padding-right: 15px;*/
+        padding-left: 4px;
+}
+
 
 /*---------------------
   Latest Product
@@ -2615,7 +2636,7 @@ ol {
 
 .footer {
 	background: #F3F6FA;
-	padding-top: 70px;
+	padding-top: 0px;
 	padding-bottom: 0;
 }
 
