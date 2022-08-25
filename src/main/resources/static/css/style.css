@@ -225,6 +225,61 @@ ol {
 }
 /*20220825 나승현 naming end*/
 
+/*20220825 나승현 qstndlevel*/
+.qstndlevel__div {
+	position: relative;
+    width: 100%;
+    top: 100px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.qstndlevel-title {
+	margin-bottom: 50px;
+	/*text-align: center;*/
+}
+
+.qstndlevel-title h2 {
+	color: #1c1c1c;
+	font-weight: 700;
+	position: relative;
+}
+
+/*qlevel btn 3개인경우 */
+.qstndlevel-btn-list-3 {
+
+}
+
+.qstndlevel-btn-3 {
+    position: relative;
+    width: 100%;
+    /* padding-right: 15px; */
+    /* padding-left: 52px; */
+    zoom: 1.3;
+}
+
+.qstndlevel-btn-txt{
+    /*font-size: 14px;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 13px 30px 12px;
+    background: #7fad39;
+    border: none;*/
+
+    display: inline-block;
+    font-size: 14px;
+    width: 100%;
+    color: #1c1c1c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #b2b2b2;
+    padding: 14px 20px 12px;
+    border-radius: 25px;
+}
+
+/*20220825 나승현 naming end*/
 
 /* buttons */
 
