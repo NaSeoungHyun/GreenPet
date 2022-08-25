@@ -184,6 +184,48 @@ ol {
 }
 /*20220825 나승현 loading end*/
 
+/*20220825 나승현 index */
+.index__title {
+	    position: relative;
+        width: 100%;
+        top: 245px;
+        padding-right: 15px;
+        padding-left: 15px;
+}
+
+.login__btn__section {
+	 position: relative;
+     width: 100%;
+     top: 694px;
+     padding-right: 15px;
+     padding-left: 272px;
+
+}
+
+.login__btn{
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: 800;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 13px 30px 12px;
+	background: #7fad39;
+	border: none;
+}
+
+/*20220825 나승현 index end*/
+
+/*20220825 나승현 naming end*/
+.naming__div {
+	position: relative;
+    width: 100%;
+    top: 245px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/*20220825 나승현 naming end*/
+
+
 /* buttons */
 
 .primary-btn {
