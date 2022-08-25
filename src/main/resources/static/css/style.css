@@ -158,6 +158,32 @@ ol {
 	color: #fff;
 }
 
+
+
+/*20220825 나승현 loading */
+.loading__div {
+	    position: relative;
+        width: 100%;
+        top: 345px;
+        padding-right: 15px;
+        padding-left: 15px;
+}
+.loading__image{
+            height: 115px;
+            width: 124px;
+            margin: auto;
+            position: relative;
+            background-position: center center;
+}
+
+/*20220825 나승현 loading*/
+.set-bg {
+	background-repeat: repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
+
 /* buttons */
 
 .primary-btn {
@@ -962,7 +988,6 @@ ol {
         padding-right: 15px;*/
         padding-left: 4px;
 }
-
 
 /*---------------------
   Latest Product
@@ -2629,6 +2654,19 @@ ol {
 .blog__details__widget .blog__details__social a:last-child {
 	margin-right: 0;
 }
+
+/*20220824 나승현*/
+.searching-title {
+	margin-top: 50px;
+	text-align: center;
+}
+
+searching-title h2 {
+	color: #1c1c1c;
+	font-weight: 700;
+	position: relative;
+}
+
 
 /*---------------------
   Footer
