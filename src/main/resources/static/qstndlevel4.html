@@ -23,31 +23,48 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+
 <script>
     function setchoice(s){
         const urlParams = new URLSearchParams(window.location.search);
-        location.href = "qoptlevel.html?" + urlParams ;
+        urlParams.append('qans4', s);
+        location.href = "qbridge.html?" + urlParams ;
     }
 </script>
+
 <body>
 <!-- Page Preloder -->
 <div id="preloder">
     <div class="loader"></div>
 </div>
 
+<!-- Featured Section Begin -->
 <div class="container" >
-    <div class="loading__div">
-        <div class="section-title" >
-            <h3>다음은 추가질문입니다. </h3>
-            <br>
-            <h5>질문에 답하지 않을 수 있습니다.</h5>
+    <div class="qstndlevel__div">
 
-            <div class="login__btn__section">
-                <button type="submit" class="login__btn" onclick="setchoice();" >Go</button>
-            </div>
+        <div class="qstndlevel-title">
+            <script>
+               let url = window.location.search;
+               let param = new URLSearchParams(url);
+               var name = param.get('name');
+               document.write(name + "(이)가 있어서");
+            </script>
+        </div>
+
+
+        <div class="qstndlevel-btn-3">
+            <button type="submit" class="qstndlevel-btn-txt" value="A004001" onclick="setchoice(value)">집중이 잘 돼요</button>
+            <button type="submit" class="qstndlevel-btn-txt" value="A004002" onclick="setchoice(value)">쾌적해요</button>
+            <button type="submit" class="qstndlevel-btn-txt" value="A004003" onclick="setchoice(value)">마음이 편해요</button>
+            <button type="submit" class="qstndlevel-btn-txt" value="A004004" onclick="setchoice(value)">즐거요</button>
         </div>
     </div>
 </div>
+
+
+
+<!-- Featured Section End -->
+
 
 <!-- Js Plugins -->
 <script src="js/jquery-3.3.1.min.js"></script>
