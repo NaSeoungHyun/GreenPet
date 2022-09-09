@@ -30,12 +30,26 @@
     <div class="loader"></div>
 </div>
 
+<script>
+
+   let url = window.location.search;
+   let param = new URLSearchParams(url);
+   var name = param.get('name');
+
+<!--alert(name);-->
+<!--//alert(document.getElementById("namedd").value );-->
+<!--   document.getElementById("named").innerHTML  = name;-->
+<!--   //document.write("* "+ name+ "를(을)");-->
+
+
+</script>
+
 <!-- Featured Section Begin -->
 <div class="container" >
     <div class="qstndlevel__div">
 
-        <div class="qstndlevel-title" >
-            <h2>* 뿡빵이를</h2>
+        <div class="qstndlevel-title" id="namedd">
+            <h2 id="named">* 뿡빵이를</h2>
         </div>
 
 

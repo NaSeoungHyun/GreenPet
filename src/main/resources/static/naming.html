@@ -24,6 +24,21 @@
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
+<script type="text/javascript" >
+  function isvalid(){
+   var name = document.getElementById("name").value;
+   if(!name)
+   {
+      alert("이름을 입력해주세요");
+   }
+   else
+   {
+      location.href = "qstndlevel1.html?name=" + name;
+   }
+  }
+
+</script>
+
 <body>
 <!-- Page Preloder -->
 <div id="preloder">
@@ -31,17 +46,17 @@
 </div>
 
 <div class="container" >
-
   <div class="naming__div">
     <p>반려식물의 이름을 지어보세요.</p>
-
     <form action="#">
-      <input type="text" placeholder="name">
-      <button type="submit" class="site-btn">Go</button>
+      <input type="text" placeholder="name" id = "name">
     </form>
+      <button type="submit" class="site-btn" onClick="isvalid()">Go</button>
 
   </div>
 </div>
+
+
 
 <!-- Js Plugins -->
 <script src="js/jquery-3.3.1.min.js"></script>
