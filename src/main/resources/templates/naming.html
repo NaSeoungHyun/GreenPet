@@ -31,10 +31,6 @@
    {
       alert("이름을 입력해주세요");
    }
-   else
-   {
-      location.href = "qstndlevel1.html?name=" + name;
-   }
   }
 
 </script>
@@ -48,10 +44,12 @@
 <div class="container" >
   <div class="naming__div">
     <p>반려식물의 이름을 지어보세요.</p>
-    <form action="#">
-      <input type="text" placeholder="name" id = "name">
+
+    <form action="naming" method="post">
+      <input type="text" placeholder="name" id= "name" name= "name">
+      <button type="submit" class="site-btn" >Go</button>
     </form>
-      <button type="submit" class="site-btn" onClick="isvalid()">Go</button>
+
 
   </div>
 </div>

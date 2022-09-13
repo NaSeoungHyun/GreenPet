@@ -26,8 +26,11 @@
 <script>
     function setchoice(s){
         const urlParams = new URLSearchParams(window.location.search);
-        urlParams.append('qans4', s);
-        location.href = "loading.html?" + urlParams ;
+        urlParams.append('lfclr', 1);
+        urlParams.append('lfptrn', 1);
+        urlParams.append('flwclr', 1);
+        urlParams.append('grwspd', 1);
+        location.href = "loading.html";
     }
 </script>
 

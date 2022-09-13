@@ -24,45 +24,23 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
-<script>
-    function setchoice(s){
-        const urlParams = new URLSearchParams(window.location.search);
-        urlParams.append('qans1', s);
-        location.href = "qstndlevel2.html?" + urlParams ;
-    }
-</script>
-
 <body>
 <!-- Page Preloder -->
 <div id="preloder">
     <div class="loader"></div>
 </div>
 
-<!-- Featured Section Begin -->
 <div class="container" >
-    <div class="qstndlevel__div">
-
-
-        <div class="qstndlevel-title">
-            <script>
-               let url = window.location.search;
-               let param = new URLSearchParams(url);
-               var name = param.get('name');
-               document.write(name + "(이) 는");
-            </script>
-        </div>
-
-        <div class="qstndlevel-btn-3">
-            <button type="submit" class="qstndlevel-btn-txt" value="A001001" onclick="setchoice(value)">매일 보살펴줄 자신이 있어요</button>
-            <button type="submit" class="qstndlevel-btn-txt" value="A001002" onclick="setchoice(value)">가끔은 혼자 두고싶어요</button>
-            <button type="submit" class="qstndlevel-btn-txt" value="A001003" onclick="setchoice(value)">알아서도 잘 컸으면 좋겟어요</button>
+    <div class="index__title">
+        <div class="section-title" >
+            <h3>내게 맞는 식물 찾기 </h3>
         </div>
     </div>
 </div>
 
-
-
-<!-- Featured Section End -->
+<div class="login__btn__section" >
+    <a type="submit" class="login__btn" href="/naming">Login</a>
+</div>
 
 
 <!-- Js Plugins -->
