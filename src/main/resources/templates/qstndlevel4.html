@@ -43,21 +43,21 @@
     <div class="qstndlevel__div">
 
         <div class="qstndlevel-title">
-            <script>
-               let url = window.location.search;
-               let param = new URLSearchParams(url);
-               var name = param.get('name');
-               document.write(name + "(이)가 있어서");
-            </script>
+            <h2 th:text=" ${name} + '가 있어서'"></h2>
         </div>
 
-
+    <form action="qbridge" method="post">
         <div class="qstndlevel-btn-3">
-            <button type="submit" class="qstndlevel-btn-txt" value="A004001" onclick="setchoice(value)">집중이 잘 돼요</button>
-            <button type="submit" class="qstndlevel-btn-txt" value="A004002" onclick="setchoice(value)">쾌적해요</button>
-            <button type="submit" class="qstndlevel-btn-txt" value="A004003" onclick="setchoice(value)">마음이 편해요</button>
-            <button type="submit" class="qstndlevel-btn-txt" value="A004004" onclick="setchoice(value)">즐거요</button>
+            <input type="hidden" th:name="name" th:value="${name}" />
+            <input type="hidden" th:name="qstndlevel1" th:value="${qstndlevel1}" />
+            <input type="hidden" th:name="qstndlevel2" th:value="${qstndlevel2}" />
+            <input type="hidden" th:name="qstndlevel3" th:value="${qstndlevel3}" />
+            <button type="submit" class="qstndlevel-btn-txt" value="A004001" name= "qstndlevel4" onclick="setchoice(value)">집중이 잘 돼요</button>
+            <button type="submit" class="qstndlevel-btn-txt" value="A004002" name= "qstndlevel4" onclick="setchoice(value)">쾌적해요</button>
+            <button type="submit" class="qstndlevel-btn-txt" value="A004003" name= "qstndlevel4" onclick="setchoice(value)">마음이 편해요</button>
+            <button type="submit" class="qstndlevel-btn-txt" value="A004004" name= "qstndlevel4" onclick="setchoice(value)">즐거요</button>
         </div>
+    </form>
     </div>
 </div>
 

@@ -20,11 +20,11 @@ public class NamingController {
    }
 
     // naming 페이지에서 name 값 받음
-    @PostMapping("/naming")
-    public String namingAction(@RequestParam("name") String name, Model model){
+    @RequestMapping("/qstndlevel1")
+    public String moveQstndlevel1(@RequestParam("name") String name, Model model){
 
         model.addAttribute("name",name);
-        logger.info("[LOG] name -> " + name);
+        logger.info("[LOG] qstndlevel1 : name -> " + name);
         return "qstndlevel1";
     }
 

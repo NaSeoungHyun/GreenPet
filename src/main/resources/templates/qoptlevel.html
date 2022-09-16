@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="zxx" xmlns:th="http://www.w3.org/1999/xhtml">
 
 <head>
   <meta charset="UTF-8">
@@ -23,49 +23,45 @@
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
-<script>
-    function setchoice(s){
-        const urlParams = new URLSearchParams(window.location.search);
-        urlParams.append('lfclr', 1);
-        urlParams.append('lfptrn', 1);
-        urlParams.append('flwclr', 1);
-        urlParams.append('grwspd', 1);
-        location.href = "loading.html";
-    }
-</script>
 
 <body>
 
 
 <div class="container">
   <br><br><br>
+  <form action="result" method="post">
   <div class="row">
+    <input type="hidden" th:name="name" th:value="${name}" />
+    <input type="hidden" th:name="qstndlevel1" th:value="${qstndlevel1}" />
+    <input type="hidden" th:name="qstndlevel2" th:value="${qstndlevel2}" />
+    <input type="hidden" th:name="qstndlevel2" th:value="${qstndlevel3}" />
+    <input type="hidden" th:name="qstndlevel2" th:value="${qstndlevel4}" />
     <div class="col-lg-12">
       <h3>잎 색상</h3>
     </div>
     <div class="cat comedy">
       <label>
-        <input type="checkbox" value="1"><span>녹색</span>
+        <input type="checkbox" name = "lfclr_green" value="1"><span>녹색</span>
       </label>
     </div>
     <div class="cat crime">
       <label>
-        <input type="checkbox" value="1"><span>노란색</span>
+        <input type="checkbox" name = "lfclr_yellow" value="1"><span>노란색</span>
       </label>
     </div>
     <div class="cat history">
       <label>
-        <input type="checkbox" value="1"><span>흰색</span>
+        <input type="checkbox" name = "lfclr_white" value="1"><span>흰색</span>
       </label>
     </div>
     <div class="cat reality">
       <label>
-        <input type="checkbox" value="1"><span>빨강</span>
+        <input type="checkbox" name = "lfclr_red" value="1"><span>빨강</span>
       </label>
     </div>
     <div class="cat scifi">
       <label>
-        <input type="checkbox" value="1"><span>기타</span>
+        <input type="checkbox" name = "lfclr_and" value="1"><span>기타</span>
       </label>
     </div>
 
@@ -75,22 +71,22 @@
     </div>
     <div class="cat comedy">
       <label>
-        <input type="checkbox" value="1"><span>줄무늬</span>
+        <input type="checkbox" name = "lfptrn_stripe" value="1"><span>줄무늬</span>
       </label>
     </div>
     <div class="cat crime">
       <label>
-        <input type="checkbox" value="1"><span>점무늬</span>
+        <input type="checkbox" name = "lfptrn_dot" value="1"><span>점무늬</span>
       </label>
     </div>
     <div class="cat history">
       <label>
-        <input type="checkbox" value="1"><span>가장자리무늬</span>
+        <input type="checkbox" name = "lfptrn_edge"  value="1"><span>가장자리무늬</span>
       </label>
     </div>
     <div class="cat reality">
       <label>
-        <input type="checkbox" value="1"><span>기타</span>
+        <input type="checkbox" name = "lfptrn_and"  value="1"><span>기타</span>
       </label>
     </div>
 
@@ -100,37 +96,37 @@
     </div>
     <div class="cat comedy">
       <label>
-        <input type="checkbox" value="1"><span>녹색</span>
+        <input type="checkbox" name = "flwclr_green"  value="1"><span>녹색</span>
       </label>
     </div>
     <div class="cat crime">
       <label>
-        <input type="checkbox" value="1"><span>흰색</span>
+        <input type="checkbox" name = "flwclr_white"  value="1"><span>흰색</span>
       </label>
     </div>
     <div class="cat history">
       <label>
-        <input type="checkbox" value="1"><span>노란색</span>
+        <input type="checkbox" name = "flwclr_yellow"  value="1"><span>노란색</span>
       </label>
     </div>
     <div class="cat reality">
       <label>
-        <input type="checkbox" value="1"><span>적색</span>
+        <input type="checkbox" name = "flwclr_red"  value="1"><span>적색</span>
       </label>
     </div>
     <div class="cat scifi">
       <label>
-        <input type="checkbox" value="1"><span>주황색</span>
+        <input type="checkbox" name = "flwclr_orange"  value="1"><span>주황색</span>
       </label>
     </div>
     <div class="cat comedy">
       <label>
-        <input type="checkbox" value="1"><span>파란색</span>
+        <input type="checkbox" name = "flwclr_blue"  value="1"><span>파란색</span>
       </label>
     </div>
     <div class="cat crime">
       <label>
-        <input type="checkbox" value="1"><span>기타</span>
+        <input type="checkbox" name = "flwclr_and"  value="1"><span>기타</span>
       </label>
     </div>
     <br><br>
@@ -139,20 +135,22 @@
     </div>
     <div class="cat comedy">
       <label>
-        <input type="checkbox" value="1"><span>느림</span>
+        <input type="checkbox" name = "grwspd_slow" value="1"><span>느림</span>
       </label>
     </div>
     <div class="cat crime">
       <label>
-        <input type="checkbox" value="1"><span>보통</span>
+        <input type="checkbox" name = "grwspd_average" value="1"><span>보통</span>
       </label>
     </div>
     <div class="cat history">
       <label>
-        <input type="checkbox" value="1"><span>빠름</span>
+        <input type="checkbox" name = "grwspd_fast" value="1"><span>빠름</span>
       </label>
     </div>
   </div>
+    <button type="submit" class="login__btn"  >Go</button>
+  </form>
   <br><br><br><br><br>
 </div>
 <!-- Product Details Section End -->
